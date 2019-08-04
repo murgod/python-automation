@@ -49,7 +49,7 @@ send_command_and_wait("sudo su - paydiant\n", 2, True)
 #Send the client's su password followed by a newline
 send_command_and_wait(ssh_pwd+"\n", 3, True)
 
-send_command_and_wait("cd apache-tomcat/webapps\n", 3, True)
+send_command_and_wait("cd path/to/directory\n", 3, True)
 send_command_and_wait("ls\n", 3, True)
 send_command_and_wait("mv file1.txt file2.txt.newbkp\n", 4, True)
 send_command_and_wait("ls\n", 3, True)
