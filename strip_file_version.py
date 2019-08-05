@@ -4,6 +4,7 @@
 
 #!/usr/bin/python
 import sys
+import re
 
 file=sys.argv[1]
 newfilename = re.split(r'(-\d*\.?\d+)', 'file')
